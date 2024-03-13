@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 14px;
+
+}
+
+li .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.nav-link {
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.responsivo {
+    display: flex;
+    margin: 50px;
+
+}
+
+
+@media(max-width: 768px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navmenu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: rgb(0, 0, 0);
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .navmenu.active {
+        left: 0;
+    }
+
+    .responsivo {
+        display: block;
+        display: grid;
+        place-items: center;
+    }
+}
+
+:root {
+    --black: #000;
+    --gray: #494c4e;
+    --white: #fff;
+    --facebookazul: #2f55a4;
+    --azulmaisclaro: #4d71ba;
+    --amarelo: #d0aa5b;
+    --cinzaclaro: #989a91;
+    --vermelho: #Ff0000;
+    --rosatemperado: #ec5353;
+    --amarelo:  #ffff00;
+}
+
+section {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: var(--black);
+    border-radius: 0px;
+    padding: 5%;
+    color: white; 
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    margin-bottom: 10px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+button {
+    margin-top: 5px;
+    font-family: inherit;
+    background-color: #FFC700;
+    color: var(--black);
+    margin-left: 5px;
+    border-radius: 7px;
+    padding: 10px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 1s;
+    background-color: var(--white);
+}
+
+nav {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+nav h1 {
+    color: var(--white);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}   
+
+nav .homebar {
+    margin-left: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 60px;
+}
+
+nav .homebar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 14px;
+    align-items: center;
+    text-align: right;
+    font-family: 'Roboto', bold;
+    margin-left: 30px;
+}
+
+
+.dark-mode {
+    background-color: var(--facebookazul);
+    color: var(--amarelo);
+}
+
+.formulario {
+    background-color: var(--azulmaisclaro);
+    color: var(--white);
+}
+
+.error {
+    background-color: var(--vermelho);
+    color: var(--white);
+    display: none;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    margin: 1px ;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+}
+
+.acerto {
+    background-color: green;
+    display: none;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    margin: auto ;
+    padding: 5px;
+}
+
+.logo{
+    color: var(--white);
+    font-size: 30px;
+    font-family: 'Roboto', bold;
+    text-decoration: none;
+    
+}
+
+label{
+    font-family: inherit;
+}

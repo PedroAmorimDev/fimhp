@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/stylepageone.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="imglogo" src="./img/logo.svg" alt="">
+            <ul class="navmenu">
+                <li class="nav-item"><a href="./pages/elixirs.html" class="nav-link">RECEITAS</a></li>
+                <li class="nav-item"><a href="" class="nav-link">SPELLS</a></li>
+                <li class="nav-item"><a href="a" class="nav-link">WIZARDS</a></li>
+            </ul>
+
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="sucessoLOGIN" class="acerto"> Cadastro Realizado</div>
+        <form id="formularioEntrar"> 
+            <div id="error-required-senhalogin" class="error"> Campo obrigatório</div>
+            <div id="error-required-senhalogin8" class="error"> A senha deve conter 8 caracteres </div>
+            <div id="error-required-emaillogin" class="error"> Campo obrigatório</div>
+            <div id="error-required-emailvalidoentrar" class="error"> Email inválido</div>
+            <div id="error-required-telefonevalidoentrar" class="error"> Telefone inválido</div>
+            <input type="text" id="emaillogin" placeholder="email@email.com">
+
+
+            <input type="password" id="senhalogin" placeholder="Digite sua senha" maxlength="8">
+            <button id="btnSend">ENVIAR</button>
+        </form>
+    </section>
+    <!-- <button id="darkmode" onclick="darkmode()">Modo Escuro</button> -->
+    <script src="./javascript/entrar.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
